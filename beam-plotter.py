@@ -210,7 +210,8 @@ if direction is not None:
         raise
 
 plt.title(title)
-fig.canvas.set_window_title(title)
+#fig.canvas.set_window_title(title)
+fig.canvas.manager.set_window_title(title)
 
 # Make plot area larger
 fig.tight_layout()
